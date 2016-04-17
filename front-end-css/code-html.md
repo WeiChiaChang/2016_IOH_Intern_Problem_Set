@@ -1,5 +1,5 @@
-```
-  <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="zh-tw">
 <head>
 	<meta charset="UTF-8">
@@ -10,7 +10,7 @@
 	<div id="header" class="rect">
 		<div class="text">
 			Header
-		</div>
+	  </div>
 	</div>
 	<div id="sidebar1" class="rect">
 		<div class="text">
