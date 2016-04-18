@@ -1,7 +1,7 @@
 ## 測驗形式
 * 20分鐘小考
 * 前端CSS
-	* 給一個只有html的檔案，給一張圖，刻出CSS
+	* 給一個只有html的檔案，給一張圖，刻出CSS(完成)
 	* display:none 和 visibility:hidden的區別？
 	* 使用選擇器達成目的
 * 後端
