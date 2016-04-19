@@ -76,3 +76,39 @@
 </body>
 </html>
 ```
+
+## problem 4
+![problem_4](http://i.imgur.com/2TK4f2C.png)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div>A div element.</div>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<p>The first paragraph.</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>Another list</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+</body>
+</html>
+
+```
