@@ -2,8 +2,9 @@
 
 設計一個form裡有一個帳號密碼，並在同一頁上印出帳號密碼來。
 
-```html檔```
-```sh
+html檔
+
+```  
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,11 +21,12 @@
         <p id="account"></p>
         <p id="pwd"></p>
     </body>
-</html>
-```
+</html>  
+```  
 
-```js檔```
-```sh
+js檔
+
+```
     document.getElementById("submitBtn").addEventListener("click", function(){
     document.getElementById("account").innerHTML = document.getElementById("account_input").value;
     document.getElementById("pwd").innerHTML = document.getElementById("pwd_input").value;
