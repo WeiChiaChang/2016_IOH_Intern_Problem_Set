@@ -1,4 +1,4 @@
-# Simple Form
+# Up Down Left Right
 
 設計一個javascript程式來偵測“上下左右”按鈕
 
