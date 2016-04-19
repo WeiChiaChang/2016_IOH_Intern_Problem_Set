@@ -4,7 +4,7 @@
 
 html檔
 
-```  
+```sh  
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,9 +26,9 @@ html檔
 
 js檔
 
-```
+```sh  
     document.getElementById("submitBtn").addEventListener("click", function(){
-    document.getElementById("account").innerHTML = document.getElementById("account_input").value;
-    document.getElementById("pwd").innerHTML = document.getElementById("pwd_input").value;
+        document.getElementById("account").innerHTML = document.getElementById("account_input").value;
+        document.getElementById("pwd").innerHTML = document.getElementById("pwd_input").value;
     });
 ```
