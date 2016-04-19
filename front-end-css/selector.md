@@ -1,0 +1,28 @@
+# 根據以下所提供的html和screenshot寫出相對應的css
+
+ * problem 1
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	h1, p {
+	    background-color: yellow;
+	}
+	</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div>
+  <p>My name is Donald.</p>
+  <p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+</body>
+</html>
+```
