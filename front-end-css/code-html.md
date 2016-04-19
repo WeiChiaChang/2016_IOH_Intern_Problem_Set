@@ -1,3 +1,5 @@
+> 以下提供了一份html和一些必要的元素，其中header和footer占了版面的100%，sidebar1和sidebar2各佔版面的25%，請寫出相對應的css code
+
 | Component | Color                  |
 |-----------|------------------------|
 | Header    | #26a69a                |
@@ -12,7 +14,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
-	<link rel="stylesheet" href="style.css">
+	<style>
+
+	.text {
+		text-align: center;
+		/*padding:  auto;*/
+		line-height: 200px;
+		font-family: sans-serif, Microsoft Jhenghei;
+		text-transform: uppercase;
+		font-size: 32px;
+	    font-weight: bold;
+	}
+
+	.rect {
+		height: 200px;
+	}
+	
+	</style>
 </head>
 <body>
 	<div id="header" class="rect">
