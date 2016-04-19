@@ -1,8 +1,8 @@
 ## 測驗形式
 * 20分鐘小考
 * 前端CSS
-	* 給一個只有html的檔案，給一張圖，刻出CSS(完成)
-	* display:none 和 visibility:hidden的區別？
+	* 給一個只有html的檔案，給一張圖，刻出CSS
+	* 給一張scrrnshot，推測可能是哪個css性質有變化
 	* 使用選擇器達成目的
 * 後端
 	* ssh登入RPi，給予相對路徑，下載所需檔案
