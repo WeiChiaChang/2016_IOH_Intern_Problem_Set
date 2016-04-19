@@ -8,11 +8,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-	h1, p {
-	    background-color: yellow;
-	}
-	</style>
 </head>
 <body>
 
