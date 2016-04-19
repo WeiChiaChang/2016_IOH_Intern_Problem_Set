@@ -1,4 +1,4 @@
-> 以下提供了一份html和一些必要的元素，其中header和footer占了版面的100%，sidebar1和sidebar2各佔版面的25%，請寫出相對應的css code
+> 以下已經提供了一份html架構和一些必要的css元素，其中 header 和 footer 占了版面的100%，sidebar1 和 sidebar2 各佔版面的25%，請寫出相對應的css code。
 
 | Component | Color                  |
 |-----------|------------------------|
