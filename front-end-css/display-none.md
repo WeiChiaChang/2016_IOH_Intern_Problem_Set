@@ -1,9 +1,11 @@
 ## 簡單說明兩者差異即可
 
-* A圖
+### A圖
 ![A](http://i.imgur.com/nRNHvUt.png)
 
-* B圖
+<hr>
+
+### B圖
 ![B](http://i.imgur.com/Qh1ukjU.png)
 
 ```html
