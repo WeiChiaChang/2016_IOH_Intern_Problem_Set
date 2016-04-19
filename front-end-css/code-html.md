@@ -1,3 +1,11 @@
+| Component | Color                  |
+|-----------|------------------------|
+| Header    | #26a69a                |
+| Sidebar1  | #999999                |
+| Sidebar2  | #F1CD75                |
+| Content   | #80cbc4                |
+| Footer    | rgba(166, 38, 65, 0.9) |
+
 ```html
 <!DOCTYPE html>
 <html lang="zh-tw">
