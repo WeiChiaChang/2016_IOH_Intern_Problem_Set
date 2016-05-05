@@ -1,7 +1,7 @@
 # Reverse a String
 
 設計一個function反轉傳入的字串，  
-請寫在 ```reverse_string()``` 這個function內
+請寫在 `reverse_string()` 這個function內
 
 ```sh
 function reverse(s) {

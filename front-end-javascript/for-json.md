@@ -2,11 +2,13 @@
 
 
 請讀出json格式的value，分別有以下三個key
-  * team
-  * name
-  * phone
+
+* team
+* name
+* phone
  
 以下為範例json
+
 ```sh
 var json = [{
         "team" : "Lakers", 
@@ -35,7 +37,8 @@ var json = [{
     }];
 ```
 
-寫在此json_run 這個function內
+寫在此json_run這個function內並印出在console中
+
 ```sh
 function json_run(){
     //以下是答案

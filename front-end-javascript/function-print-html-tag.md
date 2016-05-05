@@ -1,9 +1,9 @@
 # Print Html Tag
 
-請讀出array的值，並將值放在 ```<ul id="IOH">``` 內的```<li>```，
+請讀出array的值，並將值放在 `<ul id="IOH">` 內的`<li>`，
 
 EX.
-```<li>``` IOH ```</li>```
+`<li>` IOH `</li>`
  
 以下為範例array
 ```sh

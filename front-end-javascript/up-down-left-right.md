@@ -3,6 +3,7 @@
 設計一個javascript程式來偵測“上下左右”按鈕
 
 答案
+
 ```
     window.addEventListener("keydown", checkKeyPressed, false);
     

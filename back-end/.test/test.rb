@@ -22,7 +22,7 @@ end
 
 # add digits
 def start_add_digits
-	test_data = CSV.read('test_data/add_digits.csv')
+	test_data = CSV.read('./.test/test_data/add_digits.csv')
 
 	pass = true
 
@@ -43,7 +43,7 @@ def start_add_digits
 end
 
 begin
-	require '../add-digit/answer.rb'
+	require './add-digit/answer.rb'
 rescue Exception => e
 	puts "add digits => fail".error
 	puts "#{e}".message
@@ -55,7 +55,7 @@ end
 # Ans: 333 rows
 def start_count_string
 	# get arr
-	file = File.open('test_data/query_result.csv', 'r')
+	file = File.open('./.test/test_data/query_result.csv', 'r')
 	arr = file.to_a
 	file.close
 
@@ -65,17 +65,16 @@ def start_count_string
 		puts "count string num => pass".pass
 		unless output == 333
 			puts "nealy right".message
-			puts "right answer : " + "333".pass
 		end
 	else
 		puts "Not pass in count string num".error
 		puts "output : #{output}".message
-		puts "expect : 333".message
+		puts "expect : 不告訴你".message
 	end
 end
 
 begin
-	require '../count-string-num/answer.rb'
+	require './count-string-num/answer.rb'
 rescue Exception => e
 	puts "count string num => fail".error
 	puts "#{e}".message
@@ -93,7 +92,7 @@ end
 def start_crawler
 	pass = true
 
-	test_data = CSV.read('test_data/crawler.csv')[0]
+	test_data = CSV.read('./.test/test_data/crawler.csv')[0]
 	output_data = crawler
 
 	test_data.each do |data|
@@ -115,7 +114,7 @@ def start_crawler
 end
 
 begin
-	require '../ruby-crawler/answer.rb'
+	require './ruby-crawler/answer.rb'
 rescue Exception => e
 	puts "ruby crawler => fail".error
 	puts "#{e}".message
