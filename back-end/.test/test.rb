@@ -125,7 +125,7 @@ def start_crawler
 	end
 
 	puts "ruby crawler => pass".pass if pass
-	puts "Time elapsed #{(end_time - beginning_time)*1000} milliseconds".message
+	puts "Time elapsed #{(end_time - beginning_time)} seconds".message
 end
 
 begin
