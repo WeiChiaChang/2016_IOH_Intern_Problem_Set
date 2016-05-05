@@ -27,6 +27,7 @@ def start_add_digits
 	pass = true
 
 	test_data.each do |data|
+
 		output = add_digits(data[0].to_i)
 
 		unless output == data[1].to_i
@@ -37,6 +38,7 @@ def start_add_digits
 			pass = false
 			break
 		end
+
 	end
 
 	puts "add digits => pass".pass if pass
@@ -48,7 +50,12 @@ rescue Exception => e
 	puts "add digits => fail".error
 	puts "#{e}".message
 else
-	start_add_digits
+	begin
+		start_add_digits
+	rescue Exception => e
+		puts "add digits => fail".error
+		puts "#{e}".message
+	end
 end
 
 # count string num
@@ -59,7 +66,9 @@ def start_count_string
 	arr = file.to_a
 	file.close
 
+	beginning_time = Time.now
 	output = count_string_num(arr)
+	end_time = Time.now
 
 	if output >= 323 && output <= 343
 		puts "count string num => pass".pass
@@ -71,6 +80,8 @@ def start_count_string
 		puts "output : #{output}".message
 		puts "expect : 不告訴你".message
 	end
+
+	puts "Time elapsed #{(end_time - beginning_time)*1000} milliseconds".message
 end
 
 begin
@@ -93,7 +104,10 @@ def start_crawler
 	pass = true
 
 	test_data = CSV.read('./.test/test_data/crawler.csv')[0]
+
+	beginning_time = Time.now
 	output_data = crawler
+	end_time = Time.now
 
 	test_data.each do |data|
 		unless output_data.index(data)
@@ -111,6 +125,7 @@ def start_crawler
 	end
 
 	puts "ruby crawler => pass".pass if pass
+	puts "Time elapsed #{(end_time - beginning_time)*1000} milliseconds".message
 end
 
 begin
