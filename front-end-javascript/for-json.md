@@ -7,34 +7,36 @@
 * name
 * phone
  
-以下為範例json
+以下為題目的json
 
 ```sh
-var json = [{
+var json = [
+    {
         "team" : "Lakers", 
         "name" : "Kobe",
-        "phone" : "0988777666"
+        "number" : "24"
     },
     {
         "team" : "Thunders", 
         "name" : "Durant",
-        "phone" : "0988555444"
+        "number" : "35"
     },
     {
         "team" : "Cavaliers", 
         "name" : "James",
-        "phone" : "0988333222"
+        "number" : "23"
     },
     {
         "team" : "Warriors", 
         "name" : "Curry",
-        "phone" : "0988111000"
+        "number" : "30"
     },
     {
         "team" : "Rockets", 
         "name" : "Harden",
-        "phone" : "0988888999"
-    }];
+        "number" : "13"
+    }
+];
 ```
 
 寫在此json_run這個function內，並將值放在 `<ul id="second-answer">` 內的`<li>`
