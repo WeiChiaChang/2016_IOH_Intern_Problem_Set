@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>測試網頁</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="answer/add-digits.js"></script>
+		<script type="text/javascript" src="answer/for-json.js"></script>
+		<script type="text/javascript" src="answer/for-array.js"></script>
+		<script type="text/javascript" src="answer/reverse-a-string.js"></script>
+		<script type="text/javascript" src="answer/up-down-left-right.js"></script>
+
+		<h3>第一題：add-digit.js</h3>
+		<p>add_digits(38) : <span id="first-answer-1"></span><span id="first-answer-1-judge"></span></p>
+		<p>add_digits(1024) : <span id="first-answer-2"></span><span id="first-answer-2-judge"></span></p>
+		<p>add_digits(56789) : <span id="first-answer-3"></span><span id="first-answer-3-judge"></span></p>
+
+		<hr>
+		<h3>第二題：for-json.js</h3>
+		<ul id="second-answer"></ul>
+
+		<hr>
+		<h3>第三題：for-array.js</h3>
+		<ul id="third-answer"></ul>
+
+		<hr>
+		<h3>第四題：reverse-a-string.js</h3>
+		<p>reverse_string("IOH") : <span id="forth-answer-1"></span><span id="forth-answer-1-judge"></span></p>
+		<p>reverse_string("Victor") : <span id="forth-answer-2"></span><span id="forth-answer-2-judge"></span></p>
+		<p>reverse_string("refrigerator") : <span id="forth-answer-3"></span><span id="forth-answer-3-judge"></span></p>
+
+		<hr>
+		<h3>第五題：simple-form.js</h3>
+		<iframe src="answer/simple-form.html"></iframe>
+
+		<hr>
+		<h3>第六題：up-down-left-right.js</h3>
+
+		<script type="text/javascript">
+
+			// first_answer_1
+			const first_answer_1 = add_digits(38);
+			document.getElementById("first-answer-1").innerHTML = first_answer_1;
+			if(first_answer_1 == "2")
+				add_acc_icon("first-answer-1-judge");
+			else
+				add_err_icon("first-answer-1-judge");
+
+			// first_answer_2
+			const first_answer_2 = add_digits(1024);
+			document.getElementById("first-answer-2").innerHTML = first_answer_2;
+			if(first_answer_2 == "7")
+				add_acc_icon("first-answer-2-judge");
+			else
+				add_err_icon("first-answer-2-judge");
+
+			// first_answer_3
+			const first_answer_3 = add_digits(56789);
+			document.getElementById("first-answer-3").innerHTML = first_answer_3;
+			if(first_answer_3 == "8")
+				add_acc_icon("first-answer-3-judge");
+			else
+				add_err_icon("first-answer-3-judge");
+
+			function add_acc_icon(id) {
+				var acc_icon = document.createElement("img");
+				acc_icon.src = "answer/accept-icon.png";
+				acc_icon.setAttribute("height", "15");
+				acc_icon.setAttribute("width", "15");
+
+				document.getElementById(id).appendChild(acc_icon);
+			}
+
+			function add_err_icon(id) {
+				var err_icon = document.createElement("img");
+				err_icon.src = "answer/error-icon.png";
+				err_icon.setAttribute("height", "15");
+				err_icon.setAttribute("width", "15");
+
+				document.getElementById(id).appendChild(err_icon);
+			}
+
+			//second-answer
+			var json = [{
+		        "team" : "Lakers", 
+		        "name" : "Kobe",
+		        "number" : "24"
+		    },
+		    {
+		        "team" : "Thunders", 
+		        "name" : "Durant",
+		        "number" : "35"
+		    },
+		    {
+		        "team" : "Cavaliers", 
+		        "name" : "James",
+		        "number" : "23"
+		    },
+		    {
+		        "team" : "Warriors", 
+		        "name" : "Curry",
+		        "number" : "30"
+		    },
+		    {
+		        "team" : "Rockets", 
+		        "name" : "Harden",
+		        "number" : "13"
+		    }];
+
+		    json_run(json);
+		    	
+		    //third-answer
+		    var array = ['Paul', 'Jordan', 'Howard', 'Duncan', 'Parker'];
+		    array_run(array);
+
+		    // forth_answer_1
+			const forth_answer_1 = reverse_string("IOH");
+			document.getElementById("forth-answer-1").innerHTML = forth_answer_1;
+			if(forth_answer_1 == "HOI")
+				add_acc_icon("forth-answer-1-judge");
+			else
+				add_err_icon("forth-answer-1-judge");
+
+			// forth_answer_2
+			const forth_answer_2 = reverse_string("Victor");
+			document.getElementById("forth-answer-2").innerHTML = forth_answer_2;
+			if(forth_answer_2 == "rotciV")
+				add_acc_icon("forth-answer-2-judge");
+			else
+				add_err_icon("forth-answer-2-judge");
+
+			// forth_answer_3
+			const forth_answer_3 = reverse_string("refrigerator");
+			document.getElementById("forth-answer-3").innerHTML = forth_answer_3;
+			if(forth_answer_3 == "rotaregirfer")
+				add_acc_icon("forth-answer-3-judge");
+			else
+				add_err_icon("forth-answer-3-judge");
+
+		</script>
+
+	</body>
+</html>

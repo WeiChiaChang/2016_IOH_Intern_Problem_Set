@@ -4,7 +4,7 @@
 請寫在 `reverse_string()` 這個function內
 
 ```sh
-function reverse(s) {
+function reverse_string(s) {
     //以下為答案
     var str = '';
     for (var i = s.length - 1; i >= 0; i--)
@@ -12,5 +12,5 @@ function reverse(s) {
     return str;
 }
 
-console.log(reverse('IOH'));
+console.log(reverse_string('IOH'));
 ```

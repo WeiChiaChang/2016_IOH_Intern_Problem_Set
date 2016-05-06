@@ -20,15 +20,14 @@ html檔
         </form>
         <p id="account"></p>
         <p id="pwd"></p>
+
+        <script type="text/javascript">
+            document.getElementById("submitBtn").addEventListener("click", function(){
+            document.getElementById("account").innerHTML = document.getElementById("account_input").value;
+            document.getElementById("pwd").innerHTML = document.getElementById("pwd_input").value;
+        });
+        </script>
     </body>
 </html>  
 ```  
 
-js檔
-
-```sh  
-    document.getElementById("submitBtn").addEventListener("click", function(){
-        document.getElementById("account").innerHTML = document.getElementById("account_input").value;
-        document.getElementById("pwd").innerHTML = document.getElementById("pwd_input").value;
-    });
-```

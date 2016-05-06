@@ -1,6 +1,6 @@
 # Up Down Left Right
 
-設計一個javascript程式來偵測“上下左右”按鈕
+設計一個javascript程式來偵測“上下左右”按鍵事件，並在按下按鍵後alert出按的按鍵
 
 答案
 

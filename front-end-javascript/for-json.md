@@ -37,17 +37,17 @@ var json = [{
     }];
 ```
 
-寫在此json_run這個function內並印出在console中
+寫在此json_run這個function內，並將值放在 `<ul id="second-answer">` 內的`<li>`
 
 ```sh
 function json_run(){
     //以下是答案
 	for(var i = 0; i < json.length; i++) {
-    	var obj = json[i];
-    	console.log(obj.team);
-        console.log(obj.name);
-        console.log(obj.phone);
-	}
+        var obj = json[i];
+        document.getElementById("second-answer").innerHTML += ('<li>' + obj.team + '</li>');
+        document.getElementById("second-answer").innerHTML += ('<li>' + obj.name + '</li>');
+        document.getElementById("second-answer").innerHTML += ('<li>' + obj.number + '</li>');
+    }
  }
 
 json_run();

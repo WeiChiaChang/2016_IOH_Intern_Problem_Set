@@ -1,6 +1,6 @@
-# Print Html Tag
+# Array For Loop
 
-請讀出array的值，並將值放在 `<ul id="IOH">` 內的`<li>`，
+請讀出array的值，並將值放在 `<ul id="third-answer">` 內的`<li>`，
 
 EX.
 `<li>` IOH `</li>`
@@ -10,10 +10,10 @@ EX.
 var array = ['Paul', 'Jordan', 'Howard', 'Duncan', 'Parker'];
 ```
 
-寫在此print_html_tag 這個function內
+array_run 這個function內
 
 ```sh
-function print_html_tag(){
+function array_run(){
     //以下是答案
 	var html = ""; 
     for(var i = 0; i < array.length; i++){
@@ -21,8 +21,8 @@ function print_html_tag(){
       html += array[i];
       html += "</li>";
     }
-	document.getElementById("IOH").innerHTML = html;
+	document.getElementById("third-answer").innerHTML = html;
  }
 
-print_html_tag();
+array_run();
 ```
